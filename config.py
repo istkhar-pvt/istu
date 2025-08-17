@@ -7,28 +7,28 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID","22540373"))
+API_HASH = getenv("API_HASH","41c21b4f450a79e23b0ccf7593aeaad3")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN","5418725646:AAHoubyDRmC9bvW3k0AtuCqFT-LUbg8cofk")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI","mongodb+srv://untoldp:untoldp@untoldp.zdixt.mongodb.net/?retryWrites=true&w=majority&appName=untoldp")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 600))
 
 # Chat id of a group for logging bot's activities
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", None))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID","-1001550054357"))
 
 # Get this value from @MissRose_Bot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", None))
+OWNER_ID = int(getenv("OWNER_ID","6391774843"))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
+HEROKU_APP_NAME = getenv("HEROKU_APP_NAME","lehar")
 # Get it from http://dashboard.heroku.com/account
-HEROKU_API_KEY = getenv("HEROKU_API_KEY")
+HEROKU_API_KEY = getenv("HEROKU_API_KEY","HRKU-76a2723e-ff3f-4191-b17f-d5a68b882cc8")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
@@ -65,7 +65,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 2145386496))
 
 
 # Get your pyrogram v2 session from Replit
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION","BQFX8FUAk5VbVlU1TIzaPtPcMvi4hT1I9YMw5xqFzCyIiopQKxRMVACAwNBghCJDHgXszS8Z97iq4vqLs70gwqAhfx5cesSoxtxMYSAEKCegjxlWSBTfc0OD5MvMaZAi0L4uQG1k0rSx3W8vEdF6y5WwBSG30G1LYUG-wW_nN8RGJrleanOXTFbDcuWYiWqQLSUfI0bxwlAwZosMutjMNBgFNm3gbyY4j7g1-br5KhQ6klGtCgLPNTv9UfrHhn54BjU4hzcd4j9Y3z0x210ahD4PiBFZ1gexLtGe5kHZendA1fImkTL80YDxYKtiJDT2Pvrqtens1Qowvj9GVPnBT4T53jRpYAAAAAHYFwJPAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -117,3 +117,4 @@ if SUPPORT_GROUP:
         raise SystemExit(
             "[ERROR] - Your SUPPORT_GROUP url is wrong. Please ensure that it starts with https://"
         )
+
